@@ -27,7 +27,7 @@ void input() {                      //procedure Input
     }
 }
 
-void insertion() {
+void insertion() {                                                     //Procedure insertionsort
     int temp;                                                          //Membuat variabel data temporer atau menyimpan sementara
     int i, j;                                                          //Membuat variabel j sebagai penanda
 
@@ -49,4 +49,15 @@ void insertion() {
     }
 
 }
+void display() {                            //Procedure display
+    cout << endl;                           // output baris kosong
+    cout << "\n=========================" << endl; //output ke layar
+    cout << "Element array yang telah tersusun" << endl; //output ke layar
+    cout << "=========================" << endl;         //output ke layar
 
+    for (int j = 0; j < n; j++) {           //looping dengan j dimulai dari 0 hingga n-1
+        cout << arr[j] << endl;             //output ke layar
+    }
+    cout << endl;                           //output baris kosong
+
+}
